@@ -7,8 +7,6 @@
 
 This repository contains the source code of the game **Bitcoin Clicker**.
 
-## Changelog - [here](https://github.com/julianYaman/bitcoin-clicker/blob/master/CHANGELOG.md)
-
 ## Contributing
 
 If you found any issues or typos, just clone the repository and do the changes you want.
