@@ -91,7 +91,7 @@ if(localStorage.getItem("bitcoins") === null){
   localStorage.setItem("bitcoins", "0");
 
   // Write the current amount of Bitcoins on the page
-  $(".bitcoinAmount").text(bitcoins.toFixed(8))
+  $(".bitcoinAmount").text(bitcoins.toFixed(1))
 
 }else{
 
@@ -101,7 +101,7 @@ if(localStorage.getItem("bitcoins") === null){
   $(".bitcoinAmount").text("loading...")
   $(".satoshiAmount").text("loading...")
 
-  let satoshis = bitcoins * 100000000;
+  let satoshis = bitcoins * 1;
 
 }
 
