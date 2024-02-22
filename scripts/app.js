@@ -124,6 +124,7 @@ Game.GameConst = {
 }
 
 Game.units = [
+      "Thousand",
       "Million",
       "Billion",
       "Trillion",
