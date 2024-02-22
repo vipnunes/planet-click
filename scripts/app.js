@@ -124,7 +124,6 @@ Game.GameConst = {
 }
 
 Game.units = [
-      "Thousand",
       "Million",
       "Billion",
       "Trillion",
@@ -456,9 +455,9 @@ $(document).ready(function () {
     }else if(bitcoins >= 1000){
       $(".bitcoinAmount").text(bitcoins.toFixed(0))
     }else if(bitcoins >= 1){
-      $(".bitcoinAmount").text(bitcoins.toFixed(2))
+      $(".bitcoinAmount").text(bitcoins.toFixed(0))
     }else{
-      $(".bitcoinAmount").text(bitcoins.toFixed(8))
+      $(".bitcoinAmount").text(bitcoins.toFixed(0))
     }
 
     if((bitcoins * 100000000) < 1000000) {
