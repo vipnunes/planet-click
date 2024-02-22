@@ -6,75 +6,75 @@ var bitcoinRate = 0
 var items = [
   {
     "name": "item_oldCalculator",
-    "price": "1"
+    "price": "10"
   },
   {
     "name": "item_oldCpu",
-    "price": "25"
-  },
-  {
-    "name": "item_oldComputerFromGrandpa",
-    "price": "50"
-  },
-  {
-    "name": "item_rapsberrypy",
-    "price": "75"
-  },
-  {
-    "name": "item_smartphone",
-    "price": "100"
-  },
-  {
-    "name": "item_middleClassPC",
     "price": "250"
   },
   {
-    "name": "item_cheapServer",
+    "name": "item_oldComputerFromGrandpa",
     "price": "500"
   },
   {
-    "name": "item_gamingPC",
+    "name": "item_rapsberrypy",
     "price": "750"
   },
   {
-    "name": "item_cheapMiner",
+    "name": "item_smartphone",
     "price": "1000"
   },
   {
-    "name": "item_highEndUltraPC",
-    "price": "1250"
+    "name": "item_middleClassPC",
+    "price": "2500"
   },
   {
-    "name": "item_bigMiner",
-    "price": "1500"
-  },
-  {
-    "name": "item_miningFarm",
-    "price": "1750"
-  },
-  {
-    "name": "item_nasaPC",
-    "price": "2000"
-  },
-  {
-    "name": "item_quantumRig",
+    "name": "item_cheapServer",
     "price": "5000"
   },
   {
-    "name": "item_miningFarmSpace",
+    "name": "item_gamingPC",
+    "price": "7500"
+  },
+  {
+    "name": "item_cheapMiner",
     "price": "10000"
   },
   {
-    "name": "item_miningFarmMoon",
+    "name": "item_highEndUltraPC",
+    "price": "12500"
+  },
+  {
+    "name": "item_bigMiner",
+    "price": "15000"
+  },
+  {
+    "name": "item_miningFarm",
+    "price": "17500"
+  },
+  {
+    "name": "item_nasaPC",
+    "price": "20000"
+  },
+  {
+    "name": "item_quantumRig",
     "price": "50000"
   },
   {
-    "name": "item_bitcoinTimeMachine",
+    "name": "item_miningFarmSpace",
     "price": "100000"
   },
   {
-    "name": "item_blackHolePoweredMiner",
+    "name": "item_miningFarmMoon",
+    "price": "500000"
+  },
+  {
+    "name": "item_bitcoinTimeMachine",
     "price": "1000000"
+  },
+  {
+    "name": "item_blackHolePoweredMiner",
+    "price": "10000000"
   }
 ]
 
