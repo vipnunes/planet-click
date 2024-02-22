@@ -272,9 +272,9 @@ Game.setNewBitcoinRate = function (rate) {
   }else if((bitcoinRate + rate) >= 1000 ){
     $(".bSecRateNumber").text((bitcoinRate + rate).toFixed(0))
   }else if((bitcoinRate + rate) >= 1 ){
-    $(".bSecRateNumber").text((bitcoinRate + rate).toFixed(2))
+    $(".bSecRateNumber").text((bitcoinRate + rate).toFixed(0))
   }else{
-    $(".bSecRateNumber").text((bitcoinRate + rate).toFixed(8))
+    $(".bSecRateNumber").text((bitcoinRate + rate).toFixed(0))
   }
 
   // Returning the new rate
@@ -341,9 +341,9 @@ Game.bSecFunction = function (rate) {
   }else if(bitcoins >= 1000){
     $(".bitcoinAmount").text(bitcoins.toFixed(0))
   }else if(bitcoins >= 1){
-    $(".bitcoinAmount").text(bitcoins.toFixed(2))
+    $(".bitcoinAmount").text(bitcoins.toFixed(0))
   }else{
-    $(".bitcoinAmount").text(bitcoins.toFixed(8))
+    $(".bitcoinAmount").text(bitcoins.toFixed(0))
   }
 
 
@@ -387,7 +387,7 @@ Game.optimizeNumber = function () {
 
     var num = (this / ('1e'+(unit))).toFixed(2)
 
-    var unitname = Game.units[Math.floor(unit / 3) - 1]
+    var unitname = Game.units[Math.floor(unit / 3) - 2]
 
     return num + " " + unitname
   }
