@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://github.com/julianYaman/bitcoin-clicker/blob/master/images/bitcoin-8bit.png?raw=true" width=200 />
+    <img src="https://vipnunes.github.io/planet-click/images/planet.gif?raw=true" width=200 />
 </p>
 
 <h1 align="center"> Planet Click </h1>
