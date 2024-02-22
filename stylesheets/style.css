@@ -54,7 +54,7 @@ body{
 
 .shopButton{
     position: absolute;
-    bottom: 10px;
+    bottom: 0px;
     left: 5px;
     width: 9%;
     height: 4%;
