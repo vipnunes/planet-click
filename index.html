@@ -22,7 +22,7 @@
             <p class="bSecRate"><span class="bSecRateNumber">0</span> Coins/sec</p>
             <img class="bitcoin" src="images/planet.gif">
         </div>
-        <div id="Shop" class="rightContainer buyItemContainer">
+        <div id="myDIV" class="rightContainer buyItemContainer">
             <ul class="purchaseList">
                 <li class="purchaseItem" id="item_oldCalculator" data-price="10" data-bits-per-sec="1">
                     <span class="amountOfItem">0</span>
@@ -120,7 +120,7 @@
    
     <script>
 function shopButton {
-  var x = document.getElementById("Shop");
+  var x = document.getElementById("myDIV");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
