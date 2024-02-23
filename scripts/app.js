@@ -4,7 +4,6 @@ var bitcoinRate = 0
 // Every item in the game
 // TODO: items should be part of the Game variable
 var items = [
-var items = [
   {
     "name": "item_oldCalculator",
     "price": "10"
@@ -71,7 +70,7 @@ var items = [
   },
   {
     "name": "item_bitcoinTimeMachine",
-    "price": "1000000"
+    "price": "10000000"
   },
   {
     "name": "item_blackHolePoweredMiner",
@@ -92,7 +91,7 @@ if(localStorage.getItem("bitcoins") === null){
   localStorage.setItem("bitcoins", "0");
 
   // Write the current amount of Bitcoins on the page
-  $(".bitcoinAmount").text(bitcoins.toFixed(1))
+  $(".bitcoinAmount").text(bitcoins.toFixed(8))
 
 }else{
 
@@ -102,7 +101,7 @@ if(localStorage.getItem("bitcoins") === null){
   $(".bitcoinAmount").text("loading...")
   $(".satoshiAmount").text("loading...")
 
-  let satoshis = bitcoins * 1;
+  let satoshis = bitcoins * 100000000;
 
 }
 
@@ -176,7 +175,7 @@ Game.setPriceAtGameBeginning = function (element, price, itemAmount) {
   var calculation = (parseFloat(price) * Math.pow(multiplier, parseInt(itemAmount))).toFixed(8)
 
   // Showing the actual price
-  element.children()[2].textContent = calculation + " Coins"
+  element.children()[2].textContent = calculation + " Bitcoins"
 
   // Set the data-price attribute with the new price
   element.attr("data-price", calculation.toString())
@@ -246,8 +245,8 @@ Game.setBitcoinPerSecondRateAtBeginning = function () {
 
       // Logging the calculation in the console
       console.log("i = " + i + " | B/sec before: " + before.toFixed(8) +
-        " - Calculation made: " + before.toFixed(8) + " + (" + itemAmount + " * " + bits_per_sec + ") = " +  bitcoinRate.toFixed(8) +
-        " | New B/sec at " + bitcoinRate.toFixed(8))
+        " - Calculation made: " + before.toFixed(0) + " + (" + itemAmount + " * " + bits_per_sec + ") = " +  bitcoinRate.toFixed(0) +
+        " | New B/sec at " + bitcoinRate.toFixed(0))
     }
   }
 
@@ -264,7 +263,7 @@ Game.setBitcoinPerSecondRateAtBeginning = function () {
 Game.setNewBitcoinRate = function (rate) {
 
   // Logging the new Bitcoin per second rate
-  console.log("setNewBitcoinRate -> New rate: " + (bitcoinRate + rate).toFixed(8) )
+  console.log("setNewBitcoinRate -> New rate: " + (bitcoinRate + rate).toFixed(0) )
 
   // Showing the new rate on the page
   // Rounding at specific values
@@ -362,7 +361,7 @@ Game.bSecFunction = function (rate) {
   // Save bitcoin amount in the storage
   localStorage.setItem("bitcoins", "" + bitcoins + "")
 
-  console.log("bSec -> B/sec at " + rate.toFixed(8))
+  console.log("bSec -> B/sec at " + rate.toFixed(0))
 
 }
 
@@ -445,7 +444,7 @@ $(document).ready(function () {
   $(".bitcoin").click(function () {
 
     // Add 1^-8 Bitcoins (equal to 1 satoshi)
-    bitcoins = bitcoins + 1.00000000
+    bitcoins = bitcoins + 1
 
     // Show the new number on the page
     if(bitcoins > 1000000){
@@ -518,9 +517,9 @@ $(document).ready(function () {
       }else if(bitcoins >= 1000){
         $(".bitcoinAmount").text(bitcoins.toFixed(0))
       }else if(bitcoins >= 1){
-        $(".bitcoinAmount").text(bitcoins.toFixed(2))
+        $(".bitcoinAmount").text(bitcoins.toFixed(0))
       }else{
-        $(".bitcoinAmount").text(bitcoins.toFixed(8))
+        $(".bitcoinAmount").text(bitcoins.toFixed(0))
       }
 
       // Calculation the Satoshi amount
@@ -561,6 +560,3 @@ $(document).ready(function () {
   })
 
 });
-
-
-
