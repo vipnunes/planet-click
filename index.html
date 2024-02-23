@@ -14,7 +14,6 @@
 <body>
     <div class="gameFullContent">
         <div class="leftContainer">
-            <button class="shopButton">Shop</button>
             <button class="resetButton">Reset everything</button>
         </div>
         <div class="mainGameContent">
@@ -22,7 +21,6 @@
             <p class="bSecRate"><span class="bSecRateNumber">0</span> Coins/sec</p>
             <img class="bitcoin" src="images/planet.gif">
         </div>
-<div id="Shop">
         <div class="rightContainer buyItemContainer">
             <ul class="purchaseList">
                 <li class="purchaseItem" id="item_oldCalculator" data-price="10" data-bits-per-sec="1">
@@ -118,18 +116,6 @@
             </ul>
         </div>
     </div>
-    </div>
-   
-    <script>
-function shopButton {
-  var x = document.getElementById("Shop");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-</script>
     
     <script src="lib/jquery-3.3.1.min.js"></script>
     <script async src="scripts/app.js" type="text/javascript"></script>
