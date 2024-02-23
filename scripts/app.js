@@ -4,6 +4,7 @@ var bitcoinRate = 0
 // Every item in the game
 // TODO: items should be part of the Game variable
 var items = [
+var items = [
   {
     "name": "item_oldCalculator",
     "price": "10"
