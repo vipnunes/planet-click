@@ -73,18 +73,6 @@ var items = [
     "price": "1000000"
   },
   {
-    "name": "item_aiutopiacity",
-    "price": "10000000"
-  },
-  {
-    "name": "item_item_infinitelife",
-    "price": "50000000"
-  },
-  {
-    "name": "item_item_universe",
-    "price": "75000000"
-  },
-  {
     "name": "item_blackHolePoweredMiner",
     "price": "10000000"
   }
