@@ -2,6 +2,8 @@
 
 /* Rotation animation */
 /* Solution found on StackOverflow: https://stackoverflow.com/questions/16771225/css3-rotate-animation#16771693 */
+    }
+}
 
 @font-face {
     font-family: VCR OSD Mono;
@@ -44,8 +46,8 @@ body{
     border: 3px solid black;
     font-size: 12pt;
     font-family: VCR OSD Mono, cursive;
-    background: #ffffff;
-    color: black;
+    background: #ffb84c;
+    color: white;
     cursor: pointer;
 }
 
@@ -159,17 +161,17 @@ body{
     border-bottom: 3px solid white;
     border-right: 3px solid white;
     padding-left: 10px;
-    background: black;
+    background: linear-gradient(#ffe09f, #ffb84c);
 }
 .purchaseItem:hover{
-    background: #1a1a1a;
+    background: linear-gradient(90deg, #ffe09f, #ffb84c);
     cursor: pointer;
 }
 .amountOfItem{
     float: right;
     font-size: 66pt;
     margin-right: 15px;
-    color: white;
+    color: rgba(0,0,0,.4);
     margin-top: -10px;
     margin-bottom: -50px;
 }
