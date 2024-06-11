@@ -15,8 +15,52 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+<style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .top-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #333;
+            padding: 10px 20px;
+            color: white;
+        }
+        .top-bar .site-name {
+            display: flex;
+            align-items: center;
+        }
+        .top-bar img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        .top-bar .links {
+            display: flex;
+            gap: 20px;
+        }
+        .top-bar .links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+</style>
+
 </head>
 <body>
+    <div class="top-bar">
+        <div class="site-name">
+            <img src="images/planet.png" alt="Foto do Site">
+            <span>Planet Click/span>
+        </div>
+        <div class="links">
+            <a href="#https://vipnunes.com/planet-click">We Are moving to a new website. your accont will be reseted.</a>
+        </div>
+    </div>
+
     <div class="gameFullContent">
         <div class="leftContainer">
             <button class="resetButton">Reset everything</button>
