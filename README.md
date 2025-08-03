@@ -5,7 +5,7 @@
 <h1 align="center"> Planet Click </h1>
 <h2 align="center"><a href="https://vipnunes.github.io/planet-click" target="_blank">Play now!</a></h2>
 
-This repository contains the source code of the game **Bitcoin Clicker**.
+This repository contains the source code of the game **Bitcoin Clicker**: https://github.com/julianYaman/bitcoin-clicker. 
 
 ## Contributing
 
