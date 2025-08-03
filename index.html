@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- COMMON TAGS -->
+    <meta charset="utf-8">
+    <title>Planet Click</title>
+    <link rel="icon" href="images/planet.png" type="image/png">
+    <!-- Search Engine -->
+    <meta name="description" content="A clicker game where you can get coins (Coins) by clicking in Earth!">
+    <meta name="image" content="images/planet.png">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="Planet Click (Clicker Game)">
+    <meta itemprop="description" content="A clicker game where you can get coins (Coins) by clicking in Earth!">
+    <meta itemprop="image" content="images/planet.png">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+</head>
+<body>
+    <!-- Parallax Pixel Background Animation -->
+      <section class="animated-background">
+      <div id="stars1"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+   </section>
+    <!-- End of Parallax Pixel Background Animation -->
+
+    <div class="gameFullContent">
+            <div class="leftContainer">
+                   <button class="vipnunesButton" onclick="Game.website()">vipnunes.run.place</button> </div>
+<div class="leftContainer">
+            <button class="resetButton">⚠️ Reset Game ⚠️</button>
+        </div>
+        <div class="mainGameContent">
+            <h1 class="bitcoinAmountDisplay"><span class="bitcoinAmount">0</span> Coins</h1>
+            <p class="bSecRate"><span class="bSecRateNumber">0</span> Coins/sec</p>
+            <img class="bitcoin" src="images/planet.gif">
+        </div>
+        <div class="rightContainer buyItemContainer">
+            <ul class="purchaseList">
+                <li class="purchaseItem" id="item_oldCalculator" data-price="100" data-bits-per-sec="1">
+                    <span class="amountOfItem">0</span>
+                    <p class="itemHeadline">⛓ Meteor</p>
+                    <p class="itemPrice">100 Coins</p>
+                </li>
+                <li class="purchaseItem" id="item_oldCpu" data-price="2500" data-bits-per-sec="10">
+                    <span class="amountOfItem">0</span>
+                    <p class="itemHeadline">🌕 Moon</p>
+                    <p class="itemPrice">2.5k Coins</p>
+                </li>
+                <li class="purchaseItem" id="item_oldComputerFromGrandpa" data-price="5000" data-bits-per-sec="25">
+                    <span class="amountOfItem">0</span>
+                    <p class="itemHeadline">🌕 Second Moon</p>
+                    <p class="itemPrice">5k Coins</p>
+                </li>
+                <li class="purchaseItem" id="item_rapsberrypy" data-price="7500" data-bits-per-sec="50">
+                    <span class="amountOfItem">0</span>
+                    <p class="itemHeadline">☄ Comet</p>
+                    <p class="itemPrice">7.5k Coins</p>
+                </li>
+                <li class="purchaseItem" id="item_smartphone" data-price="10000" data-bits-per-sec="75">
+                    <span class="amountOfItem">0</span>
+                    <p class="itemHeadline">🪐 Planet</p>
+                    <p class="itemPrice">10k Coins</p>
+                </li>
+                <li class="purchaseItem" id="item_middleClassPC" data-price="25000" data-bits-per-sec="100">
+                    <span class="amountOfItem">0</span>
+                    <p class="itemHeadline">🪐 Big Planet</p>
+                    <p class="itemPrice">25k Coins</p>
+                </li>
+                <li class="purchaseItem" id="item_cheapServer" data-price="50000" data-bits-per-sec="250">
+                    <span class="amountOfItem">0</span>
+                    <p class="itemHeadline">🌎 Micro Life</p>
+                    <p class="itemPrice">50k Coins</p>
+                </li>
+                <li class="purchaseItem" id="item_gamingPC" data-price="75000" data-bits-per-sec="500">
+                    <span class="amountOfItem">0</span>
+                    <p class="itemHeadline">🌎 Normal Life</p>
+                    <p class="itemPrice">75k Coins</p>
+                </li>
+                <li class="purchaseItem" id="item_cheapMiner" data-price="100000" data-bits-per-sec="750">
+                    <span class="amountOfItem">0</span>
+                    <p class="itemHeadline">🧑 Human Life</p>
+                    <p class="itemPrice">100k Coins</p>
+                </li>
+                <li class="purchaseItem" id="item_highEndUltraPC" data-price="12500" data-bits-per-sec="1000">
+                    <span class="amountOfItem">0</span>
+                    <p class="itemHeadline">👫 Clone Machine</p>
+                    <p class="itemPrice">125k Coins</p>
+                </li>
+                <li class="purchaseItem" id="item_bigMiner" data-price="150000" data-bits-per-sec="1250">
+                    <span class="amountOfItem">0</span>
+                    <p class="itemHeadline">⛏ Small Mine</p>
+                    <p class="itemPrice">150k Coins</p>
+                </li>
+                <li class="purchaseItem" id="item_miningFarm" data-price="175000" data-bits-per-sec="1500">
+                    <span class="amountOfItem">0</span>
+                    <p class="itemHeadline">⛏ Normal Mine</p>
+                    <p class="itemPrice">175k Coins</p>
+                </li>
+                <li class="purchaseItem" id="item_nasaPC" data-price="200000" data-bits-per-sec="1750">
+                    <span class="amountOfItem">0</span>
+                    <p class="itemHeadline">⛏ Big Mine</p>
+                    <p class="itemPrice">200k Coins</p>
+                </li>
+                <li class="purchaseItem" id="item_quantumRig" data-price="500000" data-bits-per-sec="1750">
+                    <span class="amountOfItem">0</span>
+                    <p class="itemHeadline">💻 Computer</p>
+                    <p class="itemPrice">500k Coins</p>
+                </li>
+                <li class="purchaseItem" id="item_miningFarmSpace" data-price="750000" data-bits-per-sec="5000">
+                    <span class="amountOfItem">0</span>
+                    <p class="itemHeadline">🗺 Internet</p>
+                    <p class="itemPrice">750k Coins</p>
+                </li>
+                <li class="purchaseItem" id="item_miningFarmMoon" data-price="1000000" data-bits-per-sec="10000">
+                    <span class="amountOfItem">0</span>
+                    <p class="itemHeadline">📱 Mobile Phone</p>
+                    <p class="itemPrice">1m Coins</p>
+                </li>
+                <li class="purchaseItem" id="item_bitcoinTimeMachine" data-price="10000000" data-bits-per-sec="50000">
+                    <span class="amountOfItem">0</span>
+                    <p class="itemHeadline">🤖 AI</p>
+                    <p class="itemPrice">10m Coins</p>
+                </li>
+                <li class="purchaseItem" id="item_blackHolePoweredMiner" data-price="100000000" data-bits-per-sec="100000">
+                    <span class="amountOfItem">0</span>
+                    <p class="itemHeadline">🤖 Robot Revolution</p>
+                    <p class="itemPrice">100m Coins</p>
+                </li>
+                <li class="purchaseItem" id="item_blackHolePoweredMiner2" data-price="1000000000" data-bits-per-sec="1000000">
+                    <span class="amountOfItem">0</span>
+                    <p class="itemHeadline">💫 Finish The Game</p>
+                    <p class="itemPrice">1b Coins</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="lib/jquery-3.3.1.min.js"></script>
+    <script async src="scripts/app.js" type="text/javascript"></script>
+</div>
+</body>
+</html>
