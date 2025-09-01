@@ -412,7 +412,7 @@ Game.resetGame = function () {
   location.reload()
 }
 Game.website = function () {
-  window.open("https://vipnunes.run.place", "_blank");
+  window.open("https://otavio.top", "_blank");
 }
 
 // --------------------------------------------------- //
